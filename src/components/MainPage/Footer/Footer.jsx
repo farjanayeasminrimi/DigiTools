@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer text-base-300 bg-black p-10">
+      <footer className=" text-base-300 bg-black p-10">
         <div className=" footer text-base-300 justify-items-center grid gap-4  grid-cols-2  md:grid-cols-5 ">
           <aside>
             <h1 className="text-white text-5xl font-extrabold mb-4">DigiTools</h1>
@@ -72,10 +72,10 @@ const Footer = () => {
           </nav>
         </div>
         <div className="">
-          <div className="divider w-full"></div>
+          <div className="divider  border-b border-gray-200/35 w-full"></div>
           <div className="flex justify-between">
             <p className="description">© 2026 Digitools. All rights reserved.</p>
-            <div className="flex justify-between gap-4 description">
+            <div className="flex justify-between gap-6 description">
               <a href="#">Privacy Policy </a>
               <a href="#">Terms of Service</a>
               <a href="#">Cookies</a>
