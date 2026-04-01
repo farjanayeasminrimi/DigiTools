@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Pro Builder",
+    "description": "Create professional resumes quickly with modern templates and smart content suggestions.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Starter",
+    "description": "Build a clean and responsive personal portfolio site without coding.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Custom themes", "Responsive layout", "SEO-ready pages"],
+    "icon": "LayoutTemplate"
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Kit",
+    "description": "A complete package for job seekers with resume, cover letter, and interview tools.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Cover letter generator", "Interview question bank", "Job tracking dashboard"],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 4,
+    "name": "Design Asset Pack",
+    "description": "Get a growing library of creative assets for branding, UI, and social content.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["500+ icons", "Social media banners", "Editable mockups"],
+    "icon": "Palette"
+  },
+  {
+    "id": 5,
+    "name": "Invoice Master",
+    "description": "Generate branded invoices and manage payments for freelance or small business work.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited invoices", "Tax calculation", "Client management"],
+    "icon": "Receipt"
+  },
+  {
+    "id": 6,
+    "name": "Learning Hub Plus",
+    "description": "Access premium courses, guided lessons, and progress tracking in one place.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["50+ premium courses", "Progress analytics", "Certificate downloads"],
+    "icon": "GraduationCap"
+  },
+  {
+    "id": 7,
+    "name": "Startup Launch Suite",
+    "description": "Everything a startup needs to launch fast, from branding kits to landing pages.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Landing page builder", "Brand kit templates", "Analytics integration"],
+    "icon": "Rocket"
+  },
+  {
+    "id": 8,
+    "name": "Content Planner Pro",
+    "description": "Plan, organize, and schedule your content workflow for blogs and social media.",
+    "price": 14,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Content calendar", "Team collaboration", "Post scheduling"],
+    "icon": "CalendarDays"
+  },
+  {
+    "id": 9,
+    "name": "E-commerce Toolkit",
+    "description": "Boost your online store with tools for product pages, promotions, and customer insights.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Product page templates", "Discount campaign tools", "Sales reporting"],
+    "icon": "ShoppingCart"
+  }
+]
