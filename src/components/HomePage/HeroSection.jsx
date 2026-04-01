@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../../assets/banner.png";
-import { Loader } from "lucide-react";
+import { Loader, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="flex-1">
           <button className="btn flex-row items-center bg-blue-100 rounded-3xl mb-6">
             <Loader size={14} color="purple"></Loader>
-            <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent inline-block rounded-3xl">
+            <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent inline-block">
               New: AI-Powered Tools Available
             </span>
           </button>
@@ -22,10 +22,15 @@ const HeroSection = () => {
             place. Start creating faster today. Explore Products
           </p>
           <div className="flex gap-4">
-            <button className="btn text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-white hover:to-white hover:text-black transition transform ease-in hover:border-purple-800 ">
-              Get Started
+            <button className="btn text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-white hover:to-white hover:text-purple-700 transition transform ease-in hover:border-purple-800 ">
+              Explore Products
             </button>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn rounded-3xl border border-purple-900 hover:bg-purple-100">
+              <Play size={15} color="purple"></Play>
+              <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent inline-block ">
+                Watch Demo
+              </span>
+            </button>
           </div>
         </div>
       </div>
