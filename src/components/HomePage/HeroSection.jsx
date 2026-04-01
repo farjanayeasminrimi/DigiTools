@@ -4,8 +4,8 @@ import { Loader, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="hero bg-base-200 mt-2">
-      <div className="hero-content flex-col lg:flex-row-reverse gap-3 md:gap-25 my-2">
+    <div className="hero bg-base-200 mt-1">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-3 md:gap-25 my-6">
         <div className="flex-1">
           <img src={hero} className="rounded-lg shadow-2xl" />
         </div>

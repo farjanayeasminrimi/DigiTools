@@ -8,3 +8,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.title {
+  color: #101727;
+}
+.description {
+  color: #627382;
+}
