@@ -8,7 +8,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "FileText"
+    "icon": "https://i.ibb.co.com/0R347wKL/operation.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Custom themes", "Responsive layout", "SEO-ready pages"],
-    "icon": "LayoutTemplate"
+    "icon": "https://i.ibb.co.com/HffwqXnL/portfolio.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Cover letter generator", "Interview question bank", "Job tracking dashboard"],
-    "icon": "Briefcase"
+    "icon": "https://i.ibb.co.com/r9qLRjb/design-tool.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["500+ icons", "Social media banners", "Editable mockups"],
-    "icon": "Palette"
+    "icon": "https://i.ibb.co.com/rKCbFrbf/social-media.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Unlimited invoices", "Tax calculation", "Client management"],
-    "icon": "Receipt"
+    "icon": "https://i.ibb.co.com/C3GKmb6N/writing-2327400-1.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["50+ premium courses", "Progress analytics", "Certificate downloads"],
-    "icon": "GraduationCap"
+    "icon": "https://i.ibb.co.com/rKCbFrbf/social-media.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Landing page builder", "Brand kit templates", "Analytics integration"],
-    "icon": "Rocket"
+    "icon": "https://i.ibb.co.com/0R347wKL/operation.png"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Content calendar", "Team collaboration", "Post scheduling"],
-    "icon": "CalendarDays"
+    "icon": "https://i.ibb.co.com/C3GKmb6N/writing-2327400-1.png"
   },
   {
     "id": 9,
@@ -96,6 +96,6 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Product page templates", "Discount campaign tools", "Sales reporting"],
-    "icon": "ShoppingCart"
+    "icon": "https://i.ibb.co.com/rKCbFrbf/social-media.png"
   }
 ]

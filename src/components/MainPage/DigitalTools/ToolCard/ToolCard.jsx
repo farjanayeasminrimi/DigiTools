@@ -1,12 +1,24 @@
-import React from "react";
+import { toast } from "react-toastify";
 
-const ToolCard = ({ card }) => {
-  console.log(card);
+const ToolCard = ({ card, selectedCart, setSelectedCart }) => {
+  const features = card.features;
+  // console.log(card);
+  const purchaseHandler = () => {
+    const existingCard = selectedCart.find((item) => item.id === card.id);
+    if (existingCard) {
+      toast.error("Already purchased");
+      return;
+    }
+
+    const newArr = [...selectedCart, card];
+    setSelectedCart(newArr);
+    toast.success("Successfully purchased!!");
+  };
   return (
     <div className="card w-96 bg-base-100 shadow-sm">
       <div className="card-body">
         {/* Status */}
-        <div className="flex justify-end">
+        <div className="flex justify-end mb-2">
           {card.tagType === "best seller" ? (
             <span className="button rounded-3xl  px-5  bg-amber-100 text-amber-700 capitalize font-semibold">
               {card.tag}
@@ -21,117 +33,47 @@ const ToolCard = ({ card }) => {
             </span>
           )}
         </div>
-        <div></div>
-        <div className="flex justify-between">
-          <h2 className="text-3xl font-bold">Premium</h2>
-          <span className="text-xl">$29/mo</span>
+        {/* icon */}
+        <div className="mb-4">
+          <img src={card.icon} alt="icon png" />
         </div>
-        <ul className="mt-6 flex flex-col gap-2 text-xs">
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-4 me-2 inline-block text-success"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span>High-resolution image generation</span>
-          </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-4 me-2 inline-block text-success"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span>Customizable style templates</span>
-          </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-4 me-2 inline-block text-success"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span>Batch processing capabilities</span>
-          </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-4 me-2 inline-block text-success"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span>AI-driven image enhancements</span>
-          </li>
-          <li className="opacity-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-4 me-2 inline-block text-base-content/50"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span className="line-through">Seamless cloud integration</span>
-          </li>
-          <li className="opacity-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-4 me-2 inline-block text-base-content/50"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span className="line-through">Real-time collaboration tools</span>
-          </li>
+        <div className="space-y-3">
+          <h2 className="text-3xl font-bold title ">{card.name}</h2>
+          <p className="description">{card.description}</p>
+        </div>
+        <div className="mt-2">
+          <span className="text-xl font-semibold title">${card.price}</span>
+          <span className="description">/{card.period}</span>
+        </div>
+
+        <ul className="mt-2 flex flex-col gap-2 text-xs">
+          {features.map((link, index) => (
+            <li key={index}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-4 me-2 inline-block text-success"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span>{link}</span>
+            </li>
+          ))}
         </ul>
-        <div className="mt-6">
-          <button className="btn btn-primary btn-block">Subscribe</button>
+        <div className="mt-2">
+          <button
+            onClick={purchaseHandler}
+            className="btn w-full text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-white hover:to-white hover:text-purple-700 transition transform ease-in hover:border-purple-800 "
+          >
+            Buy Now
+          </button>
         </div>
       </div>
     </div>
