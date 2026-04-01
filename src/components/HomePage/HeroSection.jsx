@@ -16,8 +16,10 @@ const HeroSection = () => {
               New: AI-Powered Tools Available
             </span>
           </button>
-          <h1 className="text-5xl font-extrabold leading-16">Supercharge Your Digital Workflow</h1>
-          <p className="py-6 text-[1rem] leading-8">
+          <h1 className="text-5xl title font-extrabold leading-16">
+            Supercharge Your Digital Workflow
+          </h1>
+          <p className="py-6 text-[1rem] description leading-8">
             Access premium AI tools, design assets, templates, and productivity software—all in one
             place. Start creating faster today. Explore Products
           </p>

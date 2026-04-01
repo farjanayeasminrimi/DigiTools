@@ -30,7 +30,7 @@ const NavBar = ({ selectedCart }) => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 title font-semibold">
             <li>
               <a>Products</a>
             </li>
@@ -67,8 +67,8 @@ const NavBar = ({ selectedCart }) => {
             </svg>
             <span className="badge badge-sm indicator-item">{selectedCart.length}</span>
           </div>
-          <p className="text-[.9rem] font-semibold">Login</p>
-          <button className="btn text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-transparent hover:to-transparent hover:text-black transition transform ease-in  ">
+          <p className="text-[.9rem] title font-semibold">Login</p>
+          <button className="btn text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-transparent hover:to-transparent hover:text-black transition transform ease-in ">
             Get Started
           </button>
         </div>

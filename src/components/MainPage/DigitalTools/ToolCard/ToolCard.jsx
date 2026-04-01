@@ -63,7 +63,7 @@ const ToolCard = ({ card, selectedCart, setSelectedCart }) => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span>{link}</span>
+              <span className="description">{link}</span>
             </li>
           ))}
         </ul>
