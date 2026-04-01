@@ -5,6 +5,7 @@ import HeroSection from "./components/HomePage/HeroSection";
 import StatSection from "./components/MainPage/StatSection/StatSection";
 import DigitalTools from "./components/MainPage/DigitalTools/DigitalTools";
 import { useState } from "react";
+import Footer from "./components/MainPage/Footer/Footer";
 
 function App() {
   const [selectedCart, setSelectedCart] = useState([]);
@@ -14,6 +15,7 @@ function App() {
       <HeroSection></HeroSection>
       <StatSection></StatSection>
       <DigitalTools selectedCart={selectedCart} setSelectedCart={setSelectedCart}></DigitalTools>
+      <Footer></Footer>
     </>
   );
 }
