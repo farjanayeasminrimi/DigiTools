@@ -7,6 +7,7 @@ import DigitalTools from "./components/MainPage/DigitalTools/DigitalTools";
 import { useState } from "react";
 import Footer from "./components/MainPage/Footer/Footer";
 import StartedSection from "./components/MainPage/StartedSection/StartedSection";
+import PricingSection from "./components/MainPage/PricingSection/PricingSection";
 
 function App() {
   const [selectedCart, setSelectedCart] = useState([]);
@@ -17,6 +18,7 @@ function App() {
       <StatSection></StatSection>
       <DigitalTools selectedCart={selectedCart} setSelectedCart={setSelectedCart}></DigitalTools>
       <StartedSection></StartedSection>
+      <PricingSection></PricingSection>
       <Footer></Footer>
     </>
   );
