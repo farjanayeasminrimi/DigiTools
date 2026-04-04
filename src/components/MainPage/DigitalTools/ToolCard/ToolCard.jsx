@@ -72,7 +72,7 @@ const ToolCard = ({ card, selectedCart, setSelectedCart }) => {
             onClick={purchaseHandler}
             className="btn w-full text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-white hover:to-white hover:text-purple-700 transition transform ease-in hover:border-purple-800 "
           >
-            Buy Now
+            {selectedCart.find((item) => item === card) ? "Added to Cart" : "Buy Now"}
           </button>
         </div>
       </div>
