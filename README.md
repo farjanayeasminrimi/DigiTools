@@ -1,4 +1,4 @@
-# 🌐 DigiTools
+# 🌐 Project: DigiTools
 
 ## 📌 Project Overview
 
@@ -11,7 +11,9 @@ DigiTools is a web platform where users can explore and purchase premium digital
 - Tailwind CSS
 - DaisyUI
 - JavaScript
-- React
+- React.js
+- React-Toastify (NPM Package)
+- JSON (for product data)
 
 ## ✨ Features
 
