@@ -15,7 +15,7 @@ const ToolCard = ({ card, selectedCart, setSelectedCart }) => {
     toast.success("Successfully purchased!!");
   };
   return (
-    <div className="card w-96 bg-base-100 shadow-sm">
+    <div className="card bg-base-100 shadow-sm">
       <div className="card-body">
         {/* Status */}
         <div className="flex justify-end mb-2">
