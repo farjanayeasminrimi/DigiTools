@@ -6,13 +6,13 @@ const ToolCard = ({ card, selectedCart, setSelectedCart }) => {
   const purchaseHandler = () => {
     const existingCard = selectedCart.find((item) => item.id === card.id);
     if (existingCard) {
-      toast.error("Already purchased");
+      toast.error("Already added");
       return;
     }
 
     const newArr = [...selectedCart, card];
     setSelectedCart(newArr);
-    toast.success("Successfully purchased!!");
+    toast.success("Added to cart");
   };
   return (
     <div className="card bg-base-100 shadow-sm">

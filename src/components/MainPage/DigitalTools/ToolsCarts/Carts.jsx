@@ -1,5 +1,6 @@
 import { TriangleAlert } from "lucide-react";
 import React from "react";
+import { toast } from "react-toastify";
 
 const Carts = ({ selectedCart, setSelectedCart }) => {
   let totalCount = selectedCart.reduce((total, cart) => total + cart.price, 0);
@@ -51,6 +52,7 @@ const Carts = ({ selectedCart, setSelectedCart }) => {
           <button
             onClick={() => {
               setSelectedCart([]);
+              toast.success("Successfully proceed to checkout");
             }}
             className="btn text-[.9rem] w-full font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-white hover:to-white hover:text-purple-700 transition transform ease-in hover:border-purple-800 "
           >
