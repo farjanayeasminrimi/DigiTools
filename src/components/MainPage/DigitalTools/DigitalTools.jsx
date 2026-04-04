@@ -1,9 +1,8 @@
 import React, { Suspense } from "react";
 import ToolsIntro from "./ToolsIntro/ToolsIntro";
-import ToolsCards from "./ToolsCards/ToolsCards";
 
 const toolsDataLoad = async () => {
-  const toolsRes = await fetch("/public/JsonData/Products.json");
+  const toolsRes = await fetch("/JsonData/Products.json");
   return await toolsRes.json();
 };
 
