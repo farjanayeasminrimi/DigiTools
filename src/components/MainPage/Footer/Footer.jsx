@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className=" text-base-300 bg-black p-10">
+      <footer className=" text-base-300 bg-black py-10 px-4 md:px-10">
         <div className="  text-base-300 flex  flex-col gap-10  md:flex-row justify-between items-center ">
           <aside>
             <h1 className="text-white text-5xl font-extrabold mb-4">DigiTools</h1>
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         <div className="">
           <div className="divider  border-b border-gray-200/35 w-full"></div>
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row gap-4 justify-between">
             <p className="description">© 2026 Digitools. All rights reserved.</p>
             <div className="flex justify-between gap-6 description">
               <a href="#">Privacy Policy </a>

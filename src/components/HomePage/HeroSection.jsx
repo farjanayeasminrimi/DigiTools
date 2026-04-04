@@ -5,11 +5,11 @@ import { Loader, Play } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="hero bg-base-200 mt-1">
-      <div className="hero-content flex-col lg:flex-row-reverse gap-3 md:gap-25 my-6">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-12 md:gap-25 my-6">
         <div className="flex-1">
           <img src={hero} className="rounded-lg shadow-2xl" />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 text-center md:text-left">
           <button className="btn flex-row items-center bg-blue-100 rounded-3xl mb-6">
             <Loader size={14} color="purple"></Loader>
             <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent inline-block">
@@ -23,7 +23,7 @@ const HeroSection = () => {
             Access premium AI tools, design assets, templates, and productivity software—all in one
             place. Start creating faster today. Explore Products
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center md:justify-start">
             <button className="btn text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-white hover:to-white hover:text-purple-700 transition transform ease-in hover:border-purple-800 ">
               Explore Products
             </button>

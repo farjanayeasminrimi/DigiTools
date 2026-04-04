@@ -5,7 +5,7 @@ const NavBar = ({ selectedCart }) => {
   return (
     <div className="py-3 px-3 bg-base-100 shadow-sm">
       <div className=" max-w-[1240px] mx-auto flex justify-between items-center">
-        <div className="navbar-start flex gap-4 md:gap-0">
+        <div className="navbar-start flex gap-3 md:gap-0">
           <div className="dropdown">
             <div tabIndex={0} role="button" className=" lg:hidden">
               <svg
@@ -25,7 +25,7 @@ const NavBar = ({ selectedCart }) => {
               </svg>
             </div>
           </div>
-          <a className=" text-3xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent inline-block">
+          <a className=" text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent inline-block">
             DigiTools
           </a>
         </div>
@@ -48,7 +48,7 @@ const NavBar = ({ selectedCart }) => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end  flex gap-1.25 md:gap-4 items-center">
+        <div className="navbar-end  flex gap-2 md:gap-4 items-center">
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const NavBar = ({ selectedCart }) => {
             <span className="badge badge-sm indicator-item">{selectedCart.length}</span>
           </div>
           <p className="text-[.9rem] title font-semibold">Login</p>
-          <button className="btn text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-transparent hover:to-transparent hover:text-black transition transform ease-in ">
+          <button className="button px-2.5 py-1 md:px-3 md:py-2 text-[.9rem] font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl hover:from-transparent hover:to-transparent hover:text-black transition transform ease-in ">
             Get Started
           </button>
         </div>

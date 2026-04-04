@@ -7,8 +7,10 @@ const StartedCard = ({ user, title, description, serial }) => {
         <div className="bg-purple-600 text-white py-1 px-2 rounded-full ">{serial}</div>
       </div>
       <div className="text-center space-y-3 mb-2">
-        <div className="flex justify-center">
-          <img src={user} alt="icon" />
+        <div className="flex justify-center items-center">
+          <div className=" bg-purple-300 rounded-full inline-block p-5">
+            <img src={user} alt="icon" />
+          </div>
         </div>
         <h2 className="title text-xl font-semibold mt-3">{title}</h2>
         <p className="description text-[1rem">{description}</p>

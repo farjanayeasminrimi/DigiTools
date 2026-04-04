@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkFlow = () => {
   return (
-    <div className="py-18 bg-gradient-to-r from-[#4F39F6] to-[#9514FA]  ">
+    <div className="px-4 md:px-0 py-18   bg-gradient-to-r from-[#4F39F6] to-[#9514FA]  ">
       <div className="max-w-[700px] mx-auto flex flex-col gap-4 items-center text-center text-white">
         <h1 className=" text-4xl font-extrabold">Ready to Transform Your Workflow?</h1>
         <p className=" text-[.7rem]">
